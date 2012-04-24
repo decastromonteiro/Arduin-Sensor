@@ -1,24 +1,24 @@
-int analogTemp = A5; // Leitura Analogica do sensor de Temperatura
-float tempCelsius; // Variavel que recebe o valor do analogRead(analogTemp)
-int Vermelho = 10; // Pino digital do LED Vermelho
-int Verde = 12; // Pino digital do LED Verde
-int Amarelo = 11; // Pino digital do LED Amarelo
-void lightOn ( int light); // Funçao que liga um LED do circuito
-void tempLevel (float temp); // Funçao que define o grau de temperatura medida
-int analogLDR = A1; // Leitura Analogica do sensor LDR
-int Verde1 = 9; // Pino digital do LED Verde1
-int lux; // Variavel que recebe o valor da luminosidade medida em lux
-void lightOnLDR(int light1); // Funçao que liga o LED conforme luminosidade medida
-float voltageLDR; // Funçao que recebe o valor da tensao medida no resistor em serie com o LDR
+int analogTemp = A5; // Analogic reading from the temperature sensor
+float tempCelsius; // Variable that receives the analogRead(analogTemp)
+int Vermelho = 10; // Digital pin of the RED LED
+int Verde = 12; // Digital pin of the GREEN LED
+int Amarelo = 11; // Digital pin of the YELLOW LED
+void lightOn ( int light); // Function that turns on a LED on the circuit
+void tempLevel (float temp); // Function that defines the temperature level
+int analogLDR = A1; // Analogic reading from the LDR sensor
+int Verde1 = 9; // Digital pin of the GREEN1 LED
+int lux; // Variable that receives the value of luminosity measured in LUX
+void lightOnLDR(int light1); // Function that turns on the GREEN1 LED due to the LUX
+float voltageLDR; // Function that receives the voltage measured on the resistor in series with the LDR
 void 
 
 setup(){
 
-  Serial.begin(9600); // Começa a comunicaçao serial
-  pinMode(Vermelho, OUTPUT); // Define o modo do LED Vermelho
-  pinMode(Verde, OUTPUT); // Define o modo do LED Verde
-  pinMode(Amarelo, OUTPUT); // Define o modo do LED Amarelo
-  pinMode(Verde1, OUTPUT); // Define o modo do LED Verde1
+  Serial.begin(9600); // Begins serial communication
+  pinMode(Vermelho, OUTPUT); // Define the RED LED mode
+  pinMode(Verde, OUTPUT); // Define the GREEN LED mode
+  pinMode(Amarelo, OUTPUT); // Define the YELLOW LED mode
+  pinMode(Verde1, OUTPUT); // Define the GREEN1 LED mode
 
   }
 
