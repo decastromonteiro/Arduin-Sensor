@@ -12,6 +12,7 @@ TODO:
 * Ethernet Shield Programming
 * 8X Digital Tube Programming
 * Android Programming
+* Twitter and Arduino Integration
 
 License:
 -------
