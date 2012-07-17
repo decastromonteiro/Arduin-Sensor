@@ -49,7 +49,7 @@ void loop()
 }
 
 /*
- *  // Function that turns on a LED on the circuit
+ * Function that turns on a LED on the circuit
  */
 void lightOn (int light) 
 {
